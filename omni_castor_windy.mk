@@ -12,5 +12,18 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-PRODUCT_MAKEFILES := \
-	$(LOCAL_DIR)/aosp_castor_windy.mk
+# Inherit AOSP Shinano common device parts
+$(call inherit-product, device/sony/castor_windy/aosp_sgp511.mk)
+
+# Inherit from our custom product configuration
+$(call inherit-product, vendor/omni/config/common_tablet.mk)
+
+# Inherit TWRP requirements
+$(call inherit-product, device/sony/castor_windy/twrp.mk)
+
+# Override Product Name for OmniROM
+PRODUCT_NAME := omni_castor_windy
+PRODUCT_MODEL := Xperia Z2 Tablet WiFi
+
+# Assert
+TARGET_OTA_ASSERT_DEVICE := SGP511,SGP512,castor_windy

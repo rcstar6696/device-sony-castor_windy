@@ -14,4 +14,4 @@
 # limitations under the License.
 #
 
-add_lunch_combo aosp_sgp511-userdebug
+add_lunch_combo omni_castor_windy-userdebug

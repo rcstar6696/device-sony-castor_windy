@@ -12,8 +12,11 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-include device/sony/shinano/PlatformConfig.mk
+include device/sony/shinano-common/PlatformConfigOmni.mk
 
 PRODUCT_VENDOR_KERNEL_HEADERS += device/sony/castor_windy/kernel-headers
 
 TARGET_TAP_TO_WAKE_NODE := "/sys/devices/virtual/input/clearpad/wakeup_gesture"
+
+# Include path
+TARGET_SPECIFIC_HEADER_PATH += device/sony/castor_windy/include
