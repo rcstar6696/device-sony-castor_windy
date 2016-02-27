@@ -12,5 +12,4 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-PRODUCT_MAKEFILES := \
-	$(LOCAL_DIR)/aosp_castor_windy.mk
+PRODUCT_MAKEFILES := $(LOCAL_DIR)/omni_castor_windy.mk
