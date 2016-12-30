@@ -15,6 +15,9 @@ $(call inherit-product, vendor/cm/config/common_full_tablet_wifionly.mk)
 $(call inherit-product-if-exists, frameworks/native/build/phone-xxhdpi-3072-dalvik-heap.mk)
 $(call inherit-product-if-exists, frameworks/native/build/phone-xxhdpi-3072-hwui-memory.mk)
 
+# ACDB Loader files
+$(call inherit-product, vendor/8974-Sony-Project/audio/audio_proprietary.mk)
+
 
 PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=SGP511
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_FINGERPRINT=Sony/SGP511/SGP511:5.1.1/23.4.A.0.546/3701983898:user/release-keys
