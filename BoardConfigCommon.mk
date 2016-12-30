@@ -18,3 +18,5 @@ include device/sony/shinano-common/PlatformConfig2.mk
 PRODUCT_VENDOR_KERNEL_HEADERS += device/sony/castor_windy/kernel-headers
 
 TARGET_TAP_TO_WAKE_NODE := "/sys/devices/virtual/input/clearpad/wakeup_gesture"
+
+BOARD_HARDWARE_CLASS += device/sony/castor_windy/cmhw
